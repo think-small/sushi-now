@@ -4,8 +4,8 @@ template.innerHTML = `
     <style>
         nav {
             box-sizing: border-box;
-            width: 90%;
-            padding: 0;
+            width: 100%;
+            padding: 0 5%;
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -65,6 +65,12 @@ class Navbar extends HTMLElement {
 
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+    //  Change stylings if dark-mode attribute is set to true
+    if (this.getAttribute("dark-mode")) {
+      const nav = this.shadowRoot.querySelector("nav");
+      nav.style.backgroundColor = "var(--bg-color)";
+    }
   }
 }
 

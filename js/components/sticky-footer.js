@@ -34,7 +34,7 @@ footerTemplate.innerHTML = `
     <footer>
         <div class="footer-address">
             <div>Sushi Now</div>
-            <div>51151 Nicollette Ave N</div>
+            <div>51151 Nicollet Ave N</div>
             <div>Minneapolis, MN 55555</div>
         </div>
         <div class="footer-social">

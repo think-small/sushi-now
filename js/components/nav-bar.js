@@ -53,7 +53,7 @@ template.innerHTML = `
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>

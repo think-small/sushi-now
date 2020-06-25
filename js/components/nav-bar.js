@@ -1,5 +1,6 @@
 const template = document.createElement("template");
 template.innerHTML = `
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
         nav {
             box-sizing: border-box;
@@ -38,10 +39,17 @@ template.innerHTML = `
         div {            
             width: 50%;
         }
+        
+        i {
+            padding: 0.5em;
+        }
     </style>
     <nav>
         <div>
             <a href="index.html">Sushi Now</a>
+            <a href="index.html"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="index.html"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="index.html"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>

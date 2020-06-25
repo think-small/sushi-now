@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #fafafb;
+  --secondary-color: #b7a08e;
+  --accent-color: #eb7a35;
+  --accent-two-color: #a66e67;
+  --bg-color: #794a31;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+}
+
+.jumbotron {
+  padding: 0;
+  margin: 0;
+}
+
+.emphasis {
+  font-weight: bold;
+  color: var(--accent-color);
+}

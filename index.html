@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Sushi Now</title>
+  </head>
+  <body>
+    
+    <header class="header-container">            
+    <div class="jumbotron header">
+        <nav-bar></nav-bar>
+        <div class="header-title">
+        SUSHI NOW
+        </div>
+        <div class="header-subtitle">
+            The Freshest Sushi in Minneapolis
+        </div>
+    </header>
+
+    <div class="container">
+      <section class="about">
+        <div class="about-pic"></div>
+        <div class="about-content">
+            <h4>About Us</h4>
+            <p>
+                Our chefs have all studied under the finest sushi chef tutorials on YouTube.
+                With our combined experience of 3 weeks and 5 days, you are sure to have an adequately
+                satisfying experience!
+            </p>
+        </div>
+      </section>
+
+      <section class="menu fade-in">
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="img/happy-hour.jpg" alt="happy hour"/>
+                <div class="card-body">
+                    <div class="card-text">                        
+                        <h5 class="card-title">Happy hour from 11AM to 2PM</h5>
+                        <p>Get all your favorite dishes and drinks for <span class="emphasis">30% off</span> every day</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                
+                <img class="card-img-top" src="img/fresh-sushi.jpg" alt="fresh sushi"/>
+                <div class="card-body">
+                    <div class="card-text">
+                        <h5 class="card-title">Fresh every day - Guaranteed</h5>
+                        <p>We get <span class="emphasis">fresh fish delivered every day</span>. Your satisfaction is our highest priority</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                
+                <img class="card-img-top" src="img/fresh-sushi-2.jpg" alt="great tastes"/>
+                <div class="card-body">
+                    <div class="card-text">
+                        <h5 class="card-title">Modern tastes at an affordable price</h5>
+                        <p>Our dishes are handcrafted by our talented chefs to be <span class="emphasis">eco-friendly</span> without breaking the bank</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    </div>
+    <sticky-footer></sticky-footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="js/components/nav-bar.js"></script>
+    <script src="js/components/sticky-footer.js"></script>
+    <script src="js/index.js"></script>
+    <noscript>JavaScript is required for the best experience</noscript>
+  </body>
+</html>

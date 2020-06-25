@@ -17,13 +17,28 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
   </head>
   <body>
     <nav-bar dark-mode="true"></nav-bar>
+    <section class="menu-sections-container">
+      <h2 class="menu-title">Appetizers</h2>
+      <section class="appetizers-container menu-container"></section>
+
+      <h2 class="menu-title">Entrees</h2>
+      <section class="entrees-container menu-container"></section>
+
+      <h2 class="menu-title">Sushi</h2>
+      <section class="sushi-container menu-container"></section>
+
+      <h2 class="menu-title">Sushi Rolls</h2>
+      <section class="rolls-container menu-container"></section>
+    </section>
     <sticky-footer></sticky-footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="js/components/nav-bar.js"></script>
     <script src="js/components/sticky-footer.js"></script>
+    <script src="js/components//menu-item.component.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>

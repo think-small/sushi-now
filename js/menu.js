@@ -31,6 +31,12 @@ const menuItems = [
     price: 8.99,
   },
   {
+    type: MenuItemType.APPETIZER,
+    name: "Edamame",
+    description: "Olive oil and sea salt - simplicity at its finest",
+    price: 3.5,
+  },
+  {
     type: MenuItemType.ENTREE,
     name: "Spicy Spicy Ramen",
     description: "Good luck surviving this bowl of lava",
@@ -92,3 +98,30 @@ const menuItems = [
     price: 8.99,
   },
 ];
+
+const appetizersContainer = document.querySelector(".appetizers-container");
+const entreesContainer = document.querySelector(".entrees-container");
+const sushiContainer = document.querySelector(".sushi-container");
+const rollsContainer = document.querySelector(".rolls-container");
+menuItems.forEach((menuItem) => {
+  const newItem = document.createElement("menu-item");
+  newItem.setAttribute("name", menuItem.name);
+  newItem.setAttribute("description", menuItem.description);
+  newItem.setAttribute("price", menuItem.price.toString());
+
+  switch (menuItem.type) {
+    case MenuItemType.APPETIZER:
+      appetizersContainer.append(newItem);
+      break;
+    case MenuItemType.ENTREE:
+      entreesContainer.append(newItem);
+      break;
+    case MenuItemType.SUSHI:
+      sushiContainer.append(newItem);
+      break;
+    case MenuItemType.ROLL:
+      rollsContainer.append(newItem);
+    default:
+      return;
+  }
+});

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi Now - Contact</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <nav-bar dark-mode="true"></nav-bar>
+
+    <div class="form-container">
+      <form action="#" method="POST">
+        <div class="form-group" aria-describedby="formHelp">
+          <fieldset>
+              <legend>Personal Information</legend>
+                <p>
+                  <label for="name">
+                    <span>Name:</span>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </label>
+                </p>
+        
+                <p>
+                  <label for="email">
+                    <span>Email:</span>
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="customer@email.com"
+                      required
+                    />
+                  </label>
+                </p>
+        
+                <p>
+                  <label for="phone-number">
+                    <span>Phone number:</span>
+                    <input
+                      class="form-control"
+                      type="tel"
+                      name="phone-number"
+                      id="phone-number"
+                      placeholder="555-123-456-7890"
+                    />
+                  </label>
+                </p>
+              </div>
+          </fieldset>          
+  
+        <div class="form-group">
+          <fieldset>
+            <legend>Customer Information</legend>
+            <p>
+              Have you visited us before?
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="previous-customer-yes"
+                  name="previous-customer"
+                  value="yes"
+                />
+                <label class="form-check-label" for="previous-customer-yes"
+                  >Yes</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="previous-customer-no"
+                  name="previous-customer"
+                  value="no"
+                />
+                <label class="form-check-label" for="previous-customer-no"
+                  >No</label
+                >
+              </div>              
+            </p>
+            
+            <p>
+              Best days to contact you?
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="mon" name="day-to-contact" value="monday" />
+                  <label class="form-check-label" for="mon">M</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="tues" name="day-to-contact" value="tuesday" />
+                <label class="form-check-label" for="tues">T</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="wed" name="day-to-contact" value="wednesday" />
+                <label class="form-check-label" for="wed">W</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="thurs" name="day-to-contact" value="thursday" />
+                <label class="form-check-label" for="thurs">TH</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="fri" name="day-to-contact" value="friday" />
+                <label class="form-check-label" for="fri">F</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="sat" name="day-to-contact" value="saturday" />
+                <label class="form-check-label" for="sat">S</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="sun" name="day-to-contact" value="sunday" />
+                <label class="form-check-label" for="sun">SU</label>
+            </div>
+            </p>          
+          </fieldset>
+  
+          <div class=form-group">
+            <fieldset>
+              <legend>Inquiry Information</legend>
+              <p>
+                  <div class='form-group'>
+                      <label for="reason-for-inquiry">Reason for inquiry</label>
+                      <select class="form-control" id='reason-for-inquiry'>
+                        <option>Catering</option>
+                        <option>Private party</option>
+                        <option>Feedback</option>
+                        <option>Other</option>
+                      </select>                    
+                  </div>
+              </p>
+              <p>
+                <div class="form-group">
+                  <label for="additional-info">Additional Info</label>
+                  <textarea class="form-control" id="additional-info" rows="3"></textarea>
+                </div>
+              </p>
+          </fieldset>
+          </div>          
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    
+
+    <sticky-footer></sticky-footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="js/components/nav-bar.js"></script>
+    <script src="js/components/sticky-footer.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

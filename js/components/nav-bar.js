@@ -25,11 +25,11 @@ template.innerHTML = `
             text-decoration: none;
             pointer: cursor;
             color: var(--primary-color);
+            transition: all 250ms ease-in-out;
         }
 
         a:hover {
             color: var(--accent-color);
-            text-decoration: underline;
         }
 
         a:active {

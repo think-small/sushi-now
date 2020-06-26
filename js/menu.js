@@ -107,7 +107,7 @@ menuItems.forEach((menuItem) => {
   const newItem = document.createElement("menu-item");
   newItem.setAttribute("name", menuItem.name);
   newItem.setAttribute("description", menuItem.description);
-  newItem.setAttribute("price", menuItem.price.toString());
+  newItem.setAttribute("price", `$${menuItem.price.toFixed(2)}`);
 
   switch (menuItem.type) {
     case MenuItemType.APPETIZER:

@@ -19,14 +19,18 @@ menuItemTemplate.innerHTML = `
           box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.7);
         }
 
-        h4 {
+        h3 {
           padding: 0 0 0.5em 0;
           margin: 0;
+        }
+
+        div.price {
+          padding-top: 1em;
         }
     </style>
 
     <section>
-        <h4 class="name"></h4>
+        <h3 class="name"></h3>
         <div class="description"></div>
         <div class="price"></div>
     </section>

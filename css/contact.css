@@ -4,6 +4,16 @@
   padding: 2em 0 2em 5%;
 }
 
+.error-input {
+  border: 1px solid red;
+  color: red;
+}
+
+.error-feedback {
+  font-size: small;
+  color: red;
+}
+
 select,
 option {
   max-width: 15%;

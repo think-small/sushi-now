@@ -2,7 +2,6 @@
 //  =====  CACHE DOM  =====  //
 //  =======================  //
 const fadeInObjects = document.querySelectorAll(".fade-in");
-const callToActionButton = document.querySelector(".call-to-action-btn");
 
 //  ===================================  //
 //  =====  INTERSECTION OBSERVER  =====  //

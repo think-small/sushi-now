@@ -1,8 +1,12 @@
-//  CACHE DOM NODES
+//  =============================  //
+//  =====  CACHE DOM NODES  =====  //
+//  =============================  //
 const form = document.querySelector("form");
 
+//  ================================  //
 //  DISABLE NATIVE VALIDATION AND
 //  IMPLEMENT CUSTOM FORM VALIDATION
+//  ================================  //
 form.setAttribute("novalidate", true);
 
 const errorMessages = {
@@ -18,10 +22,40 @@ const errorMessages = {
   generic: "The value you entered for this field is invalid",
 };
 
+//  =============================  //
+//  =====  EVENT LISTENERS  =====  //
+//  =============================  //
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (form.reportValidity()) {
+    alert(
+      "Thanks for the submission - we'll contact you withint 2 - 5 business days"
+    );
+    form.reset();
+  }
+});
+
 document.addEventListener(
   "blur",
   (e) => {
     const error = hasError(e.target);
+
+    if (
+      e.target.nextElementSibling &&
+      error === e.target.nextElementSibling.innerText
+    )
+      return;
+    else if (error && !e.target.nextElementSibling) {
+      const errorDiv = document.createElement("div");
+      errorDiv.classList.add("error-feedback");
+      errorDiv.innerText = error;
+      e.target.after(errorDiv);
+
+      e.target.classList.add("error-input");
+    } else {
+      e.target.nextElementSibling.remove();
+      e.target.classList.remove("error-input");
+    }
   },
   true
 );

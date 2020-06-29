@@ -23,7 +23,7 @@
     <nav-bar dark-mode="true"></nav-bar>
 
     <div class="form-container">
-      <form action="#" method="POST">
+      <form action="#" method="POST" novalidate>
         <div class="form-group" aria-describedby="formHelp">
           <fieldset>
               <legend>Personal Information</legend>
@@ -63,7 +63,8 @@
                       type="tel"
                       name="phone-number"
                       id="phone-number"
-                      placeholder="555-123-456-7890"
+                      placeholder="555-123-4567"
+                      pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im"
                     />
                   </label>
                 </p>

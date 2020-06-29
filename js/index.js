@@ -1,5 +1,12 @@
+//  =======================  //
+//  =====  CACHE DOM  =====  //
+//  =======================  //
 const fadeInObjects = document.querySelectorAll(".fade-in");
+const callToActionButton = document.querySelector(".call-to-action-btn");
 
+//  ===================================  //
+//  =====  INTERSECTION OBSERVER  =====  //
+//  ===================================  //
 const options = {
   threshold: 0.1,
   rootMargin: "0px 0px -100px 0px",

@@ -22,7 +22,6 @@ document.addEventListener(
   "blur",
   (e) => {
     const error = hasError(e.target);
-    console.log(error);
   },
   true
 );

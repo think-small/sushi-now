@@ -30,6 +30,7 @@ template.innerHTML = `
 
         a:hover {
             color: var(--accent-color);
+            font-weight: bold;
         }
 
         a:active {
@@ -54,7 +55,7 @@ template.innerHTML = `
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 `;

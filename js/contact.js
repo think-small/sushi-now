@@ -2,6 +2,7 @@
 //  =====  CACHE DOM NODES  =====  //
 //  =============================  //
 const form = document.querySelector("form");
+const phoneInput = document.querySelector("#phone-number");
 
 //  ================================  //
 //  DISABLE NATIVE VALIDATION AND
@@ -33,6 +34,18 @@ form.addEventListener("submit", (e) => {
     );
     form.reset();
   }
+});
+
+phoneInput.addEventListener("keyup", (e) => {
+  const inputLength = e.target.value.length;
+  const deleteKeys = [8, 127];
+  const keyCode = e.keyCode;
+
+  if (
+    (inputLength === 3 && !deleteKeys.includes(keyCode)) ||
+    (inputLength === 7 && !deleteKeys.includes(keyCode))
+  )
+    e.target.value = `${e.target.value}-`;
 });
 
 document.addEventListener(
